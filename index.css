@@ -1,0 +1,47 @@
+.completed .todo-text {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-out {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+
+.todo-text {
+    width: 80%;
+    border: none;
+    outline: none;
+}
+
+.todo-timestamp {
+    display: block;
+    margin-top: 5px;
+}
+
+.card {
+    margin-bottom: 20px;
+    padding: 20px; /* Ajoute du padding pour augmenter la taille de la carte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour un effet visuel */
+}
+
+.todo-list {
+    max-height: 200px; /* Limite la hauteur de la liste des tâches */
+    overflow-y: auto; /* Ajoute une barre de défilement verticale */
+    min-width: 200px;
+}
+
+.card-body{
+    max-height: 400px;
+    min-height: 300px;
+}
